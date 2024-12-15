@@ -1,0 +1,8 @@
+build/
+dist/
+nbproject
+test/
+xml-resources/
+build.xml
+catalog.xml
+manifest.mf
