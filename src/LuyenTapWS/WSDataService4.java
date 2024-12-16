@@ -33,7 +33,7 @@ public class WSDataService4 {
     public static void main(String[] args) {
         DataService_Service service = new DataService_Service();
         DataService port = service.getDataServicePort();
-        String studentCode = "B21DCCN211", qCode = "XL4TfRuQ";
+        String studentCode = "B21DCCN136", qCode = "5OBIHUyu";
         List<Integer> list = port.getData(studentCode, qCode);
         List<Integer> chan = new ArrayList<>();
         List<Integer> le = new ArrayList<>();

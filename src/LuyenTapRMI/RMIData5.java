@@ -39,7 +39,7 @@ d. Kết thúc chương trình client.
 public class RMIData5 {
     public static void main(String[] args) {
         String url = "rmi://203.162.10.109/RMIDataService";
-        String studentCode = "B21DCCN023", qCode = "mbaOgGZY";
+        String studentCode = "B21DCCN136", qCode = "q7gFIbku";
         try {
             DataService service = (DataService) Naming.lookup(url);
             String strReceive = (String) service.requestData(studentCode, qCode);

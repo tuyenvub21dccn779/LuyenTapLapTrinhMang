@@ -37,7 +37,7 @@ public class DataStream3 {
         try {
             Socket client = new Socket("203.162.10.109", 2207);
             
-            String strSend = "B21DCCN175;lvmzy8ks";
+            String strSend = "B21DCCN158;Fm5efwiC";
             DataOutputStream dos = new DataOutputStream(client.getOutputStream());
             dos.writeUTF(strSend);
             

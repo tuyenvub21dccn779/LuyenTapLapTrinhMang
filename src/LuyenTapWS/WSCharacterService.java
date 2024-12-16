@@ -40,7 +40,7 @@ public class WSCharacterService {
     public static void main(String[] args) {
         CharacterService_Service service = new CharacterService_Service();
         CharacterService port = service.getCharacterServicePort();
-        String studentCode = "B21DCCN023", qCode = "GLExF2cl";
+        String studentCode = "B21DCCN136", qCode = "1w386OaQ";
         String receiveStr = port.requestString(studentCode, qCode);
         System.out.println(receiveStr);
         String[] arr = receiveStr.split("[\\s_]");

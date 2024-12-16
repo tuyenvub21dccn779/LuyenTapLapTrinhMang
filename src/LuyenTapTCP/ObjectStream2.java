@@ -36,7 +36,7 @@ public class ObjectStream2 {
     public static void main(String[] args) {
         try {
             Socket client = new Socket("203.162.10.109", 2209);
-            String strSend = "B21DCCN175;Ilk1CHUE";
+            String strSend = "B21DCCN136;bNAiakfx";
             ObjectOutputStream oos = new ObjectOutputStream(client.getOutputStream());
             oos.writeObject(strSend);
             oos.flush();

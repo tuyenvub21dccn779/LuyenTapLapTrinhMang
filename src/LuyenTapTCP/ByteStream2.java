@@ -12,7 +12,17 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 /**
- *
+[Mã câu hỏi (qCode): fmUMeQU1].  Một chương trình server cho phép kết nối qua giao thức TCP 
+* tại cổng 2206 (thời gian giao tiếp tối đa cho mỗi yêu cầu là 5s). Yêu cầu là xây dựng một 
+* chương trình client tương tác tới server ở trên sử dụng các luồng byte 
+* (InputStream/OutputStream) để trao đổi thông tin theo thứ tự: 
+a.	Gửi mã sinh viên và mã câu hỏi theo định dạng "studentCode;qCode". 
+* Ví dụ: "B16DCCN999;2B3A6510"
+b.	Nhận dữ liệu từ server là một chuỗi các giá trị số nguyên được phân tách nhau bởi ký 
+* tự ",". Ví dụ: 1,3,9,19,33,20
+c.	Tìm và gửi lên server giá trị lớn thứ hai cùng vị trí xuất hiện của nó trong chuỗi.
+* Ví dụ: 20,5
+d.	Đóng kết nối và kết thúc chương trình.
  * @author Acer
  */
 public class ByteStream2 {
@@ -20,7 +30,7 @@ public class ByteStream2 {
         try {
             Socket client = new Socket("203.162.10.109", 2206);
             
-            String strSend = "B18DCCN143;OXxe69lK";
+            String strSend = "B21DCCN136;fmUMeQU1";
             OutputStream os = client.getOutputStream();
             os.write(strSend.getBytes());
             os.flush();

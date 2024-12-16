@@ -34,7 +34,7 @@ public class UDPDataType {
             InetAddress inetServer = InetAddress.getByName("203.162.10.109");
             int portServer = 2207;
             
-            byte[] dataSend = ";B21DCCN175;q70JYbFC".getBytes();
+            byte[] dataSend = ";B21DCCN136;QokDu392".getBytes();
             DatagramPacket dpSend = new DatagramPacket(dataSend, dataSend.length, inetServer, portServer);
             client.send(dpSend);
             

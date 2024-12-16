@@ -36,7 +36,7 @@ public class WSObjectService {
     public static void main(String[] args) {
         ObjectService_Service service = new ObjectService_Service();
         ObjectService port = service.getObjectServicePort();
-        String studentCode = "B21DCCN779", qCode = "7DKXZoSc";
+        String studentCode = "B21DCCN175", qCode = "Blx1cbXO";
         List<Order> list = port.requestListOrder(studentCode, qCode);
         Map<String, Float> map = new HashMap<>();
         List<String> listSort = new ArrayList<>();

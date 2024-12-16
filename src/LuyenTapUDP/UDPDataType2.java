@@ -33,7 +33,7 @@ public class UDPDataType2 {
             InetAddress inet = InetAddress.getByName("203.162.10.109");
             
             byte[] data = new byte[1024];
-            data = ";B21DCCN023;zHeS09lp".getBytes();
+            data = ";B21DCCN158;EhbJJi4t".getBytes();
             DatagramPacket dpSend = new DatagramPacket(data, data.length, inet, 2207);
             client.send(dpSend);
             
