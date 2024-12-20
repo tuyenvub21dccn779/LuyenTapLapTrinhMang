@@ -39,7 +39,7 @@ d. Kết thúc chương trình client.
 public class RMIByte3 {
     public static void main(String[] args) {
         String path = "rmi://203.162.10.109/RMIByteService";
-        String studentCode = "B21DCCN175", qCode = "pIertj26";
+        String studentCode = "B21DCCN131", qCode = "8n5XEtT1";
         try {
             ByteService service = (ByteService) Naming.lookup(path);
             byte[] dataReceive = service.requestData(studentCode, qCode);

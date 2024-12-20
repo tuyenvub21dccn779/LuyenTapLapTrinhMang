@@ -35,7 +35,7 @@ d. Kết thúc chương trình client.
 public class RMICharacter3 {
     public static void main(String[] args) {
         String path = "rmi://203.162.10.109/RMICharacterService";
-        String studentCode = "B21DCCN023", qCode = "TeBWrV8y";
+        String studentCode = "B21DCCN131", qCode = "6gITmFck";
         try {
             CharacterService service = (CharacterService) Naming.lookup(path);
             String strReceive = service.requestCharacter(studentCode, qCode);

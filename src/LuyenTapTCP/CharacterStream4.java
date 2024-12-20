@@ -12,8 +12,12 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 
 /**
-[Mã câu hỏi (qCode): UnGVgyGP].  Một chương trình server cho phép kết nối qua giao thức TCP tại cổng 2208 (hỗ trợ thời gian giao tiếp tối đa cho mỗi yêu cầu là 5s). Yêu cầu là xây dựng một chương trình client thực hiện kết nối tới server và sử dụng luồng ký tự (BufferedWriter/BufferedReader) để trao đổi thông tin theo kịch bản
-a.	Gửi một chuỗi gồm mã sinh viên và mã câu hỏi với định dạng "studentCode;qCode". Ví dụ: "B15DCCN999;5E263AE1"
+[Mã câu hỏi (qCode): UnGVgyGP].  Một chương trình server cho phép kết nối qua giao thức 
+* TCP tại cổng 2208 (hỗ trợ thời gian giao tiếp tối đa cho mỗi yêu cầu là 5s). Yêu cầu là 
+* xây dựng một chương trình client thực hiện kết nối tới server và sử dụng luồng ký tự 
+* (BufferedWriter/BufferedReader) để trao đổi thông tin theo kịch bản
+a.	Gửi một chuỗi gồm mã sinh viên và mã câu hỏi với định dạng "studentCode;qCode". 
+* Ví dụ: "B15DCCN999;5E263AE1"
 b.	Nhận một chuỗi ngẫu nhiên từ server
 c.	Tách chuỗi đã nhận thành 2 chuỗi và gửi lần lượt theo thứ tự lên server
            i.	Chuỗi thứ nhất gồm các ký tự và số (loại bỏ các ký tự đặc biệt)
@@ -26,7 +30,7 @@ public class CharacterStream4 {
         try {
             Socket client = new Socket("203.162.10.109", 2208);
             
-            String strSend = "B21DCCN023;UnGVgyGP";
+            String strSend = "B21DCCN131;qbI7dFkP";
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
             bw.write(strSend);
             bw.newLine();

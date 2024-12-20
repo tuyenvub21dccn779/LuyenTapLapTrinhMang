@@ -50,7 +50,7 @@ e. Kết thúc chương trình client.
 public class RMIObject3 {
     public static void main(String[] args) {
         String path = "rmi://203.162.10.109/RMIObjectService";
-        String studentCode = "B21DCCN158", qCode = "EveDB920";
+        String studentCode = "B18DCAT183", qCode = "dVohsfZU";
         try {
             ObjectService service = (ObjectService) Naming.lookup(path);
             Event event = (Event) service.requestObject(studentCode, qCode);

@@ -34,7 +34,7 @@ public class WSDataService1 {
     public static void main(String[] args) {
         DataService_Service service = new DataService_Service();
         DataService port = service.getDataServicePort();
-        String studentCode = "B21DCCN609", qCode = "1LyvNl3h";
+        String studentCode = "B21DCCN131", qCode = "dfjmFZM2";
         List<Integer> list = port.getData(studentCode, qCode);
         System.out.println(list.size());
         System.out.println(list);

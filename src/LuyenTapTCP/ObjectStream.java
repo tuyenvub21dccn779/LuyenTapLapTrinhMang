@@ -29,7 +29,7 @@ public class ObjectStream {
         try {
             Socket client = new Socket("203.162.10.109", 2209);
             ObjectOutputStream oos = new ObjectOutputStream(client.getOutputStream());
-            oos.writeObject("B21DCCN023;53kn2xt6");
+            oos.writeObject("B18DCAT183;kMTPCZJD");
             oos.flush();
             
             ObjectInputStream ois = new ObjectInputStream(client.getInputStream());

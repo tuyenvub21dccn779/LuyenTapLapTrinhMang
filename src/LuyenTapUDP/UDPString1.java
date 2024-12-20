@@ -34,7 +34,7 @@ public class UDPString1 {
             InetAddress inetServer = InetAddress.getByName("203.162.10.109");
             int portServer = 2208;
             
-            byte[] data = ";B21DCCN136;gXVNYsyU".getBytes();
+            byte[] data = ";B18DCAT183;hLGNKIXL".getBytes();
             DatagramPacket dpSend = new DatagramPacket(data, data.length, inetServer, portServer);
             client.send(dpSend);
             

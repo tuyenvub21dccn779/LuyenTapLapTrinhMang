@@ -29,7 +29,7 @@ public class CharacterStream {
         try {
             Socket client = new Socket("203.162.10.109", 2208);
             //1 gui ma sinh vien
-            String str = "B21DCCN136;o0IUGfkP";
+            String str = "B18DCAT183;WAGEbtBq";
             BufferedWriter bw = new BufferedWriter( new OutputStreamWriter(client.getOutputStream()));
             bw.write(str);
             bw.newLine();

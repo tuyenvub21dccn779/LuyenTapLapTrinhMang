@@ -51,7 +51,7 @@ public class RMIByte5 {
     
     public static void main(String[] args) {
         String path = "rmi://203.162.10.109/RMIByteService";
-        String studentCode = "B21DCCN193", qCode = "5vHFqlaO";
+        String studentCode = "B18DCAT183", qCode = "e84eJC0y";
         try {
             ByteService service = (ByteService) Naming.lookup(path);
             byte[] data = service.requestData(studentCode, qCode);

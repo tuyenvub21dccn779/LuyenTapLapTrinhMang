@@ -30,7 +30,7 @@ d. Kết thúc chương trình client.
  */
 public class WSCharacterService4 {
     public static void main(String[] args) {
-        String studentCode = "B21DCCN158", qCode = "RPl1De7n";
+        String studentCode = "B18DCAT183", qCode = "o7iqA0to";
         CharacterService_Service service = new CharacterService_Service();
         CharacterService port = service.getCharacterServicePort();
         List<Integer> list = port.requestCharacter(studentCode, qCode);

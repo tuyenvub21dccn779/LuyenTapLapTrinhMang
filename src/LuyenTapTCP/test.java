@@ -4,6 +4,9 @@
  */
 package LuyenTapTCP;
 
+import java.util.Base64;
+
+
 /**
  *
  * @author Acer
@@ -13,5 +16,6 @@ public class test {
         System.out.println((int)'a' + " " + (int)'z' + " " + ((int)'z' - (int)'a'));
         System.out.println((int)'A' + " " + (int)'Z' + " " + ((int)'Z' - (int)'A'));
         System.out.println((char)(('P' + 'H' - 'A' * 2) % 26 + 'A'));
+        
     }
 }
